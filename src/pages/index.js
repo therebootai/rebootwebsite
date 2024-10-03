@@ -1,3 +1,5 @@
+import OurServices from "@/components/OurServices";
+import OurUseTechnology from "@/components/OurUseTechnology";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -45,6 +47,8 @@ export default function Home() {
           </div>
         </section>
         <section></section>
+        <OurUseTechnology />
+        <OurServices />
       </main>
     </>
   );
