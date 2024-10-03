@@ -9,8 +9,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#4385F5",
+        secondary: "#666",
+      },
+      screens: {
+        xs: "280px",
+        sm: "580px",
+        md: "768px",
+        lg: "1024px",
+        xlg: "1280px",
+        xl: "1400px",
+        xxl: "1780px",
       },
     },
   },
