@@ -36,7 +36,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[linear-gradient(180deg,_rgba(0,_0,_0,_0.80)_0%,_rgba(0,_0,_0,_0.00)_100%)] pt-5 pb-14 px-14 xl:px-16 fixed w-full top-0 left-0 z-[1100]">
+    <nav className="bg-[linear-gradient(180deg,_rgba(0,_0,_0,_0.80)_0%,_rgba(0,_0,_0,_0.00)_100%)] pt-5 pb-14 px-8 xlg:px-14 xl:px-16 fixed w-full top-0 left-0 z-[1100]">
       <div className="flex justify-between items-center">
         <Link href="/">
           <Image
@@ -44,7 +44,7 @@ const Navbar = () => {
             alt="logo"
             width={420}
             height={51}
-            className="w-80 xl:w-[26rem]"
+            className="w-64 xlg:w-80 xl:w-[26rem]"
           />
         </Link>
         <ul className="flex items-center justify-center gap-5">
@@ -54,7 +54,7 @@ const Navbar = () => {
                 href={item.href}
                 className={`${
                   isActive(item.href) ? "text-primary" : "text-white"
-                } text-lg xl:text-xl font-medium capitalize hover:text-primary`}
+                } text-base xlg:text-lg xl:text-xl font-medium capitalize hover:text-primary`}
               >
                 {item.text}
               </Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
         </ul>
         <button
           type="button"
-          className="text-center text-sm font-semibold text-white inline-flex items-center justify-center bg-[#09f] gap-1 px-4 py-2 rounded"
+          className="text-center text-sm font-semibold text-white inline-flex items-center justify-center bg-[#09f] gap-1 px-2 xlg:px-4 py-1 xlg:py-2 rounded"
         >
           Book an Appointment
         </button>
