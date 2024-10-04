@@ -5,11 +5,13 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function Home() {
+  
   const awardsLogo = [
     "/partner-image-1.png",
     "/partner-image-2.png",
     "/partner-image-1.png",
   ];
+
   return (
     <>
       <Head>
