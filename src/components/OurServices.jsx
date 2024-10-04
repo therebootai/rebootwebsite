@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const OurServices = () => {
+
   const services = [
     {
       icon: "/icons/wevdevicon.svg",
@@ -33,6 +34,7 @@ const OurServices = () => {
       link: "",
     },
   ];
+
   return (
     <section className="xl:p-16 lg:p-8 xs:p-4 flex flex-col gap-8">
       <section className="flex flex-row justify-between items-center">
@@ -40,7 +42,7 @@ const OurServices = () => {
           <h3 className="md:text-xl xs:text-lg font-medium text-[#333333]">
             Services
           </h3>
-          <h1 className=" text-primary xs:text-lg  md:text-3xl font-semibold">
+          <h1 className="text-primary xs:text-lg  md:text-3xl font-semibold">
             Our services can help your problem.
           </h1>
         </section>
