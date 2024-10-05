@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const AboutusComponent = () => {
+const AboutusComponent = ({ showsection }) => {
   return (
     <section className="flex md:flex-row sm:flex-col justify-between md:gap-4 lg:gap-6 xlg:gap-9">
       <div className="flex flex-col gap-4">
@@ -43,17 +43,19 @@ const AboutusComponent = () => {
             />
           </div>
         </div>
-        <section className="flex flex-col text-4xl font-semibold gap-2 text-[#333333]">
-          <p className="">
-            Are Your <span className="text-primary">Ready,</span>
-          </p>
-          <p className="">
-            To Grow <span className="text-primary">Your Business</span>
-          </p>
-          <p className="">
-            Make More <span className="text-primary">Benefits</span>
-          </p>
-        </section>
+        {showsection && (
+          <section className="flex flex-col text-4xl font-semibold gap-2 text-[#333333]">
+            <p className="">
+              Are Your <span className="text-primary">Ready,</span>
+            </p>
+            <p className="">
+              To Grow <span className="text-primary">Your Business</span>
+            </p>
+            <p className="">
+              Make More <span className="text-primary">Benefits</span>
+            </p>
+          </section>
+        )}
       </div>
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-2">
@@ -89,18 +91,20 @@ const AboutusComponent = () => {
             amet mattis. Sit nunc est nibh sed odio.
           </p>
         </div>
-        <div className="w-full h-[5rem] rounded-lg flex justify-center items-center  bg-primary text-white">
-          <span className="text-4xl font-semibold text-white flex items-center w-full justify-center gap-2">
-            <Image
-              src={"/icons/talkicon.svg"}
-              alt="Talk icon"
-              width={100}
-              height={20}
-              className="w-fit h-[3rem]"
-            />
-            Talk To Our Experts Now!
-          </span>
-        </div>
+        {showsection && (
+          <div className="w-full h-[5rem] rounded-lg flex justify-center items-center  bg-primary text-white">
+            <span className="text-4xl font-semibold text-white flex items-center w-full justify-center gap-2">
+              <Image
+                src={"/icons/talkicon.svg"}
+                alt="Talk icon"
+                width={100}
+                height={20}
+                className="w-fit h-[3rem]"
+              />
+              Talk To Our Experts Now!
+            </span>
+          </div>
+        )}
       </div>
     </section>
   );
