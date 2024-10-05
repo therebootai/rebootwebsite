@@ -44,7 +44,7 @@ const Navbar = () => {
             alt="logo"
             width={420}
             height={51}
-            className="w-64 xlg:w-80 xl:w-[26rem]"
+            className="w-[29.2vw]"
           />
         </Link>
         <ul className="flex items-center justify-center gap-5">
