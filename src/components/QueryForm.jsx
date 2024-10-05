@@ -3,7 +3,9 @@ import React from "react";
 
 const QueryForm = () => {
   return (
+
     <div className="flex flex-col bg-[rgba(67,_133,_245,_0.05)] rounded-lg px-8 min-w-[30rem] xl:min-w-[40rem] flex-1 py-5">
+
       <Image
         src="/icons/query-icon.png"
         alt="query icon"
@@ -11,10 +13,14 @@ const QueryForm = () => {
         height={117}
         className="size-[5.45vmax] object-contain self-center"
       />
+
       <form
         action=""
         className="flex flex-col gap-3 xlg:gap-5 py-1 justify-between flex-1"
       >
+
+      <form action="" className="flex flex-col gap-5 py-1 justify-between flex-1">
+
         <div className="flex flex-col gap-2">
           <label htmlFor="name" className="capitalize text-xl text-[#333]">
             Name
@@ -74,7 +80,9 @@ const QueryForm = () => {
         </div>
         <button
           type="button"
-          className={`text-white text-2xl font-semibold bg-primary py-5 xl:py-7 text-center rounded-lg`}
+
+          className={`${beVietnamPro.style.fontFamily} text-white text-2xl font-semibold bg-primary py-5 xl:py-7 text-center rounded-lg`}
+
         >
           Send Query
         </button>
