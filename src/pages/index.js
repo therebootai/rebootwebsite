@@ -31,10 +31,7 @@ export default function Home() {
           loop
           muted
           preload="auto"
-
           className="w-full max-h-[33.3vw] xlg:max-h-[45.5vw] object-fill"
-
-
         />
         <section className="flex xlg:gap-11 xl:gap-12 justify-evenly  items-center my-20 mx-8 xlg:mx-24 xl:mx-28">
           <h1 className="text-[#333] max-w-[11ch] font-semibold lg:text-3xl xlg:text-4xl">
@@ -59,99 +56,6 @@ export default function Home() {
         </section>
 
         <AboutusComponent showsection={false} />
-
-        <section className="flex justify-between mx-12 xl:mx-16 gap-9">
-          <div className="flex gap-5">
-            <div className="flex flex-col justify-between">
-              <div className="w-[22vw] min-h-[20.83vmax] relative">
-                <Image
-                  src="/home-about-1.png"
-                  alt="about-us"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-              <div className="flex justify-between">
-                <div className=" w-[10.3vw] min-h-[11.7vmax] relative">
-                  <Image
-                    fill
-                    src="/home-about-2.png"
-                    alt="about us"
-                    className="object-cover rounded-lg"
-                  />
-                </div>
-                <div className="relative w-[10.3vw] min-h-[11.7vmax]">
-                  <Image
-                    fill
-                    src="/home-about-3.png"
-                    alt="about us"
-                    className="object-cover rounded-lg"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="w-[13.125vw] min-h-[33.8vmax] relative">
-              <Image
-                fill
-                src="/home-about-4.png"
-                alt="about us"
-                className="object-cover rounded-lg"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col justify-between gap-2">
-            <h3 className="text-black font-semibold text-3xl capitalize">
-              About Us!
-            </h3>
-            <h1 className="text-primary text-5xl font-semibold">
-              We are dedicated to your Brand business.
-            </h1>
-            <p className="text-secondary text-base mt-4 line-clamp-[13] 2xl:line-clamp-none">
-              Lorem ipsum dolor sit amet consectetur. Tincidunt non et et
-              integer tempus nibh. Scelerisque ullamcorper integer egestas proin
-              molestie tristique adipiscing. Tristique morbi risus scelerisque
-              dignissim ornare justo. Auctor imperdiet at vitae congue nibh.
-              Diam enim hendrerit vitae sit pellentesque. Sed phasellus sit non
-              velit neque fusce consectetur ultrices. Ut vestibulum sed commodo
-              lobortis mattis quam metus. Mauris enim quam quis laoreet. Magnis
-              vel lacus mattis sit. Gravida ridiculus molestie vitae elementum
-              ut adipiscing amet. Risus pellentesque quis pretium sit imperdiet.
-              Urna amet purus varius sit elementum cras dignissim. Sollicitudin
-              rhoncus sem sed quis malesuada id sit. Massa justo quam purus
-              blandit cursus felis pellentesque. <br /> Lobortis odio pretium
-              sit in amet duis. Cras morbi sed porttitor nam nulla aenean. Id
-              dolor cras est consectetur urna viverra amet mattis id. Ut
-              ultrices feugiat velit at mi congue consectetur pharetra
-              ultricies. Quis diam blandit pellentesque sed. Sollicitudin porta
-              sed elit nibh duis nibh. Quis feugiat donec orci amet. Mauris
-              praesent elementum at est auctor morbi. Rutrum aliquam mi morbi
-              elementum quam condimentum consectetur ipsum. Gravida non sed
-              aenean neque gravida nullam. Enim accumsan lacinia commodo
-              vestibulum enim orci tincidunt a in. <br /> Dignissim vel
-              suspendisse dui massa hendrerit in hac lacus. Hendrerit faucibus
-              praesent ut sit. Auctor id sollicitudin sagittis pulvinar lorem
-              odio amet mattis. Sit nunc est nibh sed odio. <br /> Lorem ipsum
-              dolor sit, amet consectetur adipisicing elit. Neque esse debitis
-              eveniet, iusto minus, facere non numquam nobis recusandae quasi
-              obcaecati porro enim sint aliquid, vel amet laborum distinctio
-              incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Veniam eius, nihil dolorem ea eos blanditiis sequi odio
-              perferendis quia, culpa quas cum vero voluptates. Aliquid
-              reprehenderit tempora aperiam obcaecati nihil. <br /> Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit. Cum quo labore
-              accusantium repudiandae consequuntur quibusdam quod, vel laborum
-              reprehenderit hic, nam adipisci magnam? Sint distinctio cupiditate
-              nam fuga, libero quia in sunt dolore perferendis suscipit nemo
-              dolorum voluptas corporis similique iusto dignissimos minima
-              magnam dolor modi expedita officiis veniam voluptatum. Quae, quo
-              consequuntur. Labore sint possimus odio. <br /> Minus, voluptatum.
-              Minus eum quidem nesciunt aut iusto nihil, hic eveniet temporibus
-              assumenda necessitatibus ullam magni fugit possimus. Reiciendis
-              dolor, aut, a, mollitia error magni magnam velit aliquam vero
-              tempore vel nemo omnis eius distinctio veritatis libero rerum.
-            </p>
-          </div>
-        </section>
 
         <OurUseTechnology />
         <OurServices />

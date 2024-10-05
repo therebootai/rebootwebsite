@@ -72,24 +72,7 @@ const AboutusComponent = ({ showsection }) => {
           enim orci tincidunt a in. <br /> Dignissim vel suspendisse dui massa
           hendrerit in hac lacus. Hendrerit faucibus praesent ut sit. Auctor id
           sollicitudin sagittis pulvinar lorem odio amet mattis. Sit nunc est
-          nibh sed odio. <br /> Lorem ipsum dolor sit, amet consectetur
-          adipisicing elit. Neque esse debitis eveniet, iusto minus, facere non
-          numquam nobis recusandae quasi obcaecati porro enim sint aliquid, vel
-          amet laborum distinctio incidunt! Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Veniam eius, nihil dolorem ea eos
-          blanditiis sequi odio perferendis quia, culpa quas cum vero
-          voluptates. Aliquid reprehenderit tempora aperiam obcaecati nihil.{" "}
-          <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
-          quo labore accusantium repudiandae consequuntur quibusdam quod, vel
-          laborum reprehenderit hic, nam adipisci magnam? Sint distinctio
-          cupiditate nam fuga, libero quia in sunt dolore perferendis suscipit
-          nemo dolorum voluptas corporis similique iusto dignissimos minima
-          magnam dolor modi expedita officiis veniam voluptatum. Quae, quo
-          consequuntur. Labore sint possimus odio. <br /> Minus, voluptatum.
-          Minus eum quidem nesciunt aut iusto nihil, hic eveniet temporibus
-          assumenda necessitatibus ullam magni fugit possimus. Reiciendis dolor,
-          aut, a, mollitia error magni magnam velit aliquam vero tempore vel
-          nemo omnis eius distinctio veritatis libero rerum.
+          nibh sed odio.
         </p>
         {showsection && (
           <div className="w-full h-[5rem] rounded-lg flex justify-center items-center  bg-primary text-white">
