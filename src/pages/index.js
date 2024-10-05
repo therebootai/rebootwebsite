@@ -44,6 +44,7 @@ export default function Home() {
               >
                 <Image
                   src={src}
+                  alt="partner logo"
                   width={272}
                   height={102}
                   className="rounded max-w-[18.8vw] min-h-fit"

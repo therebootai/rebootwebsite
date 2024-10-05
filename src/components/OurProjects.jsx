@@ -86,9 +86,11 @@ const OurProjects = () => {
         <div className="w-full transition-all duration-300 relative">
           <Slider {...settings}>
             {projects.map((item, index) => (
-              <section className="!flex justify-center items-center">
+              <section
+                key={index}
+                className="!flex justify-center items-center"
+              >
                 <div
-                  key={index}
                   className={`relative w-[90%] transition-all duration-300 rounded-lg h-[30rem] p-8 !flex justify-center items-center ${
                     index % 2 === 0
                       ? "bg-[#4385F51A] text-[#4385F5]"

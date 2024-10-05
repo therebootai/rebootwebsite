@@ -7,7 +7,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick/lib/slider";
 
-const about = () => {
+const About = () => {
   const vissionmission = [
     {
       icon: "/icons/missionicon.svg",
@@ -85,11 +85,11 @@ const about = () => {
         <section className="w-full">
           <Slider {...settings}>
             {vissionmission.map((item, index) => (
-              <section className="!flex justify-center items-center p-4">
-                <section
-                  key={index}
-                  className="xlg:px-4 xs:px-4 md:px-3 py-6 h-full w-full flex flex-col rounded-lg boxsh gap-4 relative"
-                >
+              <section
+                key={index}
+                className="!flex justify-center items-center p-4"
+              >
+                <section className="xlg:px-4 xs:px-4 md:px-3 py-6 h-full w-full flex flex-col rounded-lg boxsh gap-4 relative">
                   <section className="xlg:h-[2.1rem] xs:h-[1.5rem] xs:w-[3rem] xlg:w-[4rem] rounded-b-full bg-[#4385F533] absolute top-0 inset-0 left-[70%]"></section>
                   <section className="flex flex-row items-center gap-2  ">
                     <i className="w-[20%]">
@@ -126,4 +126,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

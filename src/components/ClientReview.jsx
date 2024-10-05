@@ -81,11 +81,8 @@ const ClientReview = () => {
         <section className="w-full">
           <Slider {...settings}>
             {reviews.map((item, index) => (
-              <div className="p-4">
-                <div
-                  key={index}
-                  className="!flex flex-col gap-3 py-10 bg-[rgba(67,_133,_245,_0.05)] rounded-3xl px-11"
-                >
+              <div key={index} className="p-4">
+                <div className="!flex flex-col gap-3 py-10 bg-[rgba(67,_133,_245,_0.05)] rounded-3xl px-11">
                   <h1 className="text-[#333] text-xl font-semibold">
                     &#183; Best
                     <span className="text-primary">
