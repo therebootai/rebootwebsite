@@ -17,6 +17,21 @@ const OurUseTechnology = () => {
     { imgsrc: "/images/mysql logo.webp", imgalt: "mysql" },
     { imgsrc: "/images/html-logo.webp", imgalt: "html" },
     { imgsrc: "/images/fogma-logo.webp", imgalt: "figma" },
+    { imgsrc: "/images/amazon-aws-logo.webp", imgalt: "amazon-aws-logo" },
+    { imgsrc: "/images/Azure-logo.webp", imgalt: "Azure" },
+    { imgsrc: "/images/css-logo.webp", imgalt: "css" },
+    { imgsrc: "/images/tailwindcss-logo.webp", imgalt: "tailwindcss" },
+    { imgsrc: "/images/react-native-logo.webp", imgalt: "react-native" },
+    { imgsrc: "/images/python-logo.webp", imgalt: "python" },
+    { imgsrc: "/images/PostgreSQL-logo.webp", imgalt: "PostgreSQL" },
+    {
+      imgsrc: "/images/meta-business-partner-logo.webp",
+      imgalt: "meta-business-partner",
+    },
+    { imgsrc: "/images/gpt-module.webp", imgalt: "gpt" },
+    { imgsrc: "/images/google-partner-logo.webp", imgalt: "google" },
+    { imgsrc: "/images/google-cloud-logo.webp", imgalt: "google" },
+    { imgsrc: "/images/Go-Language-logo.webp", imgalt: "Go" },
   ];
 
   return (
