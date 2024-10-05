@@ -1,3 +1,7 @@
+import OurClient from "@/components/OurClient";
+import OurProduct from "@/components/OurProduct";
+import OurProjects from "@/components/OurProjects";
+import OurResponsibility from "@/components/OurResponsibility";
 import OurServices from "@/components/OurServices";
 import OurUseTechnology from "@/components/OurUseTechnology";
 import QueryForm from "@/components/QueryForm";
@@ -142,6 +146,12 @@ export default function Home() {
         </section>
         <OurUseTechnology />
         <OurServices />
+
+        <OurProduct />
+        <OurClient />
+        <OurProjects />
+        <OurResponsibility />
+
         <section className="flex px-16 gap-6 my-20">
           <QueryForm />
           <div className="flex flex-col gap-9">
@@ -218,6 +228,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
       </main>
     </>
   );

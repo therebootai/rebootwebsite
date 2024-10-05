@@ -5,3 +5,7 @@
 .boxsh {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;
 }
+
+.boxshblue {
+  box-shadow: 10px 10px 20px 10px rgba(67, 133, 245, 0.58);
+}
