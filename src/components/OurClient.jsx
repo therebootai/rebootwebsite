@@ -5,7 +5,7 @@ import SliderComponent from "./SliderComponent";
 const OurClient = () => {
   const clients = [
     { imgsrc: "/clients/arthacredit.webp", imgalt: "Artha Credit" },
-    { imgsrc: "/clients/astracure.webp", imgalt: "Astra Cure" },
+    { imgsrc: "/clients/astracure.webp", imgalt: "Astracure" },
     { imgsrc: "/clients/azurebali.webp", imgalt: "Azure Bali" },
     { imgsrc: "/clients/bapps.webp", imgalt: "BApps" },
     { imgsrc: "/clients/behold.webp", imgalt: "Behold" },
