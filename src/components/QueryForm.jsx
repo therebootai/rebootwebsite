@@ -6,7 +6,7 @@ const beVietnamPro = Be_Vietnam_Pro({ subsets: ["latin"], weight: ["600"] });
 
 const QueryForm = () => {
   return (
-    <div className="flex flex-col bg-[rgba(67,_133,_245,_0.05)] rounded-lg px-8 min-w-[40rem] flex-1 py-5">
+    <div className="flex flex-col bg-[rgba(67,_133,_245,_0.05)] rounded-lg px-8 min-w-96 xl:min-w-[40rem] flex-1 py-5">
       <Image
         src="/icons/query-icon.png"
         alt="query icon"
@@ -14,7 +14,7 @@ const QueryForm = () => {
         height={117}
         className="size-[5.45vmax] object-contain self-center"
       />
-      <form action="" className="flex flex-col gap-5 py-1 justify-between">
+      <form action="" className="flex flex-col gap-5 py-1 justify-between flex-1">
         <div className="flex flex-col gap-2">
           <label htmlFor="name" className="capitalize text-xl text-[#333]">
             Name
@@ -22,7 +22,7 @@ const QueryForm = () => {
           <input
             type="text"
             id="name"
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-8 text-xl text-[rgba(51,51,51,0.25)]"
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -32,7 +32,7 @@ const QueryForm = () => {
           <input
             type="tel"
             id="mobile"
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-8 text-xl text-[rgba(51,51,51,0.25)]"
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -42,7 +42,7 @@ const QueryForm = () => {
           <input
             type="email"
             id="email"
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-8 text-xl text-[rgba(51,51,51,0.25)]"
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -52,7 +52,7 @@ const QueryForm = () => {
           <select
             name=""
             id="support"
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-8 text-xl text-[rgba(51,51,51,0.25)]"
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
           >
             <option value="App Development">App Development</option>
             <option value="Web Development">Web Development</option>
@@ -69,12 +69,12 @@ const QueryForm = () => {
           <input
             type="email"
             id="email"
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-8 text-xl text-[rgba(51,51,51,0.25)]"
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
           />
         </div>
         <button
           type="button"
-          className={`${beVietnamPro.style.fontFamily} text-white text-2xl font-semibold bg-primary py-7 text-center rounded-lg`}
+          className={`${beVietnamPro.style.fontFamily} text-white text-2xl font-semibold bg-primary py-5 xl:py-7 text-center rounded-lg`}
         >
           Send Query
         </button>
