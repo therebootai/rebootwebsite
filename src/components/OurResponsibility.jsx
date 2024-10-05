@@ -97,7 +97,7 @@ const OurResponsibility = ({ showsection }) => {
               Your <span className="text-primary">Business,</span>
             </h3>
             <h1 className="text-[#333333] md:text-2xl xlg:text-4xl font-semibold">
-              It's Our Responsibility To <br /> Grow
+              It&apos;s Our Responsibility To <br /> Grow
               <span className="text-primary">Your Business</span>
             </h1>
           </section>
