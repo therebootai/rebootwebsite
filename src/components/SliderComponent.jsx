@@ -55,7 +55,7 @@ const SliderComponent = ({ slides = [] }) => {
                 alt={company.imgalt}
                 width={244}
                 height={20}
-                className="w-fit xs:h-[1.5rem] sm:h-[1.8rem] md:h-[2.5rem]"
+                className="w-fit xs:h-[1.5rem] sm:h-[1.8rem] md:h-[4rem]"
               />
             </section>
           </section>

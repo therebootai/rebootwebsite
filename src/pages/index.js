@@ -1,3 +1,7 @@
+import OurClient from "@/components/OurClient";
+import OurProduct from "@/components/OurProduct";
+import OurProjects from "@/components/OurProjects";
+import OurResponsibility from "@/components/OurResponsibility";
 import OurServices from "@/components/OurServices";
 import OurUseTechnology from "@/components/OurUseTechnology";
 import SliderComponent from "@/components/SliderComponent";
@@ -55,6 +59,10 @@ export default function Home() {
         <section></section>
         <OurUseTechnology />
         <OurServices />
+        <OurProduct />
+        <OurClient />
+        <OurProjects />
+        <OurResponsibility />
       </main>
     </>
   );
