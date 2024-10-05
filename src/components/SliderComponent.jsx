@@ -47,15 +47,15 @@ const SliderComponent = ({ slides = [] }) => {
         {slides.map((company, index) => (
           <section
             key={index}
-            className="slider-container xs:p-2 md:p-4 !flex items-center justify-center"
+            className="slider-container xs:p-2 md:p-2 !flex items-center justify-center"
           >
-            <section className="w-full p-3 xs:h-[4.5rem] md:h-[6rem] xs:rounded-md md:rounded-lg flex justify-center items-center boxsh">
+            <section className="w-full p-2 xs:h-[4.5rem] md:h-[6rem] xlg:h-[7rem] xs:rounded-md md:rounded-lg flex justify-center items-center boxsh">
               <Image
                 src={company.imgsrc}
                 alt={company.imgalt}
                 width={244}
                 height={20}
-                className="w-fit xs:h-[1.5rem] sm:h-[1.8rem] md:h-[4rem]"
+                className="w-fit xs:h-[1.5rem] sm:h-[1.8rem] md:h-[6.5rem]"
               />
             </section>
           </section>
