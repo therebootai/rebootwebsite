@@ -1,3 +1,4 @@
+import AboutusComponent from "@/components/AboutusComponent";
 import OurClient from "@/components/OurClient";
 import OurProduct from "@/components/OurProduct";
 import OurProjects from "@/components/OurProjects";
@@ -11,9 +12,9 @@ import { MdOutlineStarBorder, MdStarRate } from "react-icons/md";
 
 export default function Home() {
   const awardsLogo = [
-    "/partner-image-1.png",
-    "/partner-image-2.png",
-    "/partner-image-1.png",
+    "/icons/google-partner-logo.webp",
+    "/icons/meta-business-partner-logo.webp",
+    "/icons/google-partner-logo.webp",
   ];
 
   return (
@@ -30,9 +31,12 @@ export default function Home() {
           loop
           muted
           preload="auto"
-          className="w-full max-h-[33.3vw] xlg:max-h-[55.5vw] object-fill"
+
+          className="w-full max-h-[33.3vw] xlg:max-h-[45.5vw] object-fill"
+
+
         />
-        <section className="flex xlg:gap-11 xl:gap-12 justify-evenly  items-center my-20 xlg:mx-24 xl:mx-28">
+        <section className="flex xlg:gap-11 xl:gap-12 justify-evenly  items-center my-20 mx-8 xlg:mx-24 xl:mx-28">
           <h1 className="text-[#333] max-w-[11ch] font-semibold lg:text-3xl xlg:text-4xl">
             Awards &amp; Recognitions
           </h1>
@@ -53,6 +57,9 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        <AboutusComponent showsection={false} />
+
         <section className="flex justify-between mx-12 xl:mx-16 gap-9">
           <div className="flex gap-5">
             <div className="flex flex-col justify-between">
@@ -145,6 +152,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+
         <OurUseTechnology />
         <OurServices />
 
@@ -153,7 +161,7 @@ export default function Home() {
         <OurProjects />
         <OurResponsibility />
 
-        <section className="flex px-16 gap-6 my-20">
+        <section className="flex flex-col lg:flex-row px-8 xlg:px-16 gap-6 my-20">
           <QueryForm />
           <div className="flex flex-col gap-9">
             <div className="flex flex-col gap-4">
@@ -182,20 +190,20 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 flex-1">
               <h2 className="text-[#333] text-xl font-semibold">
                 Let&apos;s See Some Reviews
               </h2>
               <h1 className="text-primary text-4xl font-semibold">
                 What Our Client Say
               </h1>
-              <div className="flex flex-col gap-3 py-10 bg-[rgba(67,_133,_245,_0.05)] rounded-3xl px-11">
+              <div className="flex flex-col gap-3 py-10 bg-[rgba(67,_133,_245,_0.05)] flex-1 rounded-3xl px-11">
                 <h1 className="text-[#333] text-xl font-semibold">
-                  &#183; Best
-                  <span className="text-primary">
+                  &#183; Best&nbsp;
+                  <span className="text-primary space-x-0.5">
                     Website Designing Company
                   </span>
-                  In Siliguri
+                  &nbsp;In Siliguri
                 </h1>
                 <p className="text-base text-secondary max-w-[77ch]">
                   Choosing Reboot Marketing Pvt. Ltd. for our website redesign
