@@ -26,7 +26,7 @@ export default function Home() {
           loop
           muted
           preload="auto"
-          className="w-full max-h-[30rem] xlg:max-h-[50rem] object-fill"
+          className="w-full max-h-[33.3vw] xlg:max-h-[55.5vw] object-fill"
         />
         <section className="flex xlg:gap-11 xl:gap-12 justify-evenly  items-center my-20 xlg:mx-24 xl:mx-28">
           <h1 className="text-[#333] max-w-[11ch] font-semibold lg:text-3xl xlg:text-4xl">
@@ -42,16 +42,16 @@ export default function Home() {
                   src={src}
                   width={272}
                   height={102}
-                  className="rounded max-w-[18.8vw] h-fit"
+                  className="rounded max-w-[18.8vw] min-h-fit"
                 />
               </div>
             ))}
           </div>
         </section>
-        <section className="flex justify-between mx-16 gap-9">
+        <section className="flex justify-between mx-12 xl:mx-16 gap-9">
           <div className="flex gap-5">
             <div className="flex flex-col justify-between">
-              <div className="w-[22vw] h-[20.83vmax] relative">
+              <div className="w-[22vw] min-h-[20.83vmax] relative">
                 <Image
                   src="/home-about-1.png"
                   alt="about-us"
@@ -60,7 +60,7 @@ export default function Home() {
                 />
               </div>
               <div className="flex justify-between">
-                <div className=" w-[10.3vw] h-[11.7vmax] relative">
+                <div className=" w-[10.3vw] min-h-[11.7vmax] relative">
                   <Image
                     fill
                     src="/home-about-2.png"
@@ -68,7 +68,7 @@ export default function Home() {
                     className="object-cover rounded-lg"
                   />
                 </div>
-                <div className="relative w-[10.3vw] h-[11.7vmax]">
+                <div className="relative w-[10.3vw] min-h-[11.7vmax]">
                   <Image
                     fill
                     src="/home-about-3.png"
@@ -78,7 +78,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-[13.125vw] h-[33.8vmax] relative">
+            <div className="w-[13.125vw] min-h-[33.8vmax] relative">
               <Image
                 fill
                 src="/home-about-4.png"
@@ -94,7 +94,7 @@ export default function Home() {
             <h1 className="text-primary text-5xl font-semibold">
               We are dedicated to your Brand business.
             </h1>
-            <p className="text-secondary text-base mt-4">
+            <p className="text-secondary text-base mt-4 line-clamp-[13] 2xl:line-clamp-none">
               Lorem ipsum dolor sit amet consectetur. Tincidunt non et et
               integer tempus nibh. Scelerisque ullamcorper integer egestas proin
               molestie tristique adipiscing. Tristique morbi risus scelerisque
