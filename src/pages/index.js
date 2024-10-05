@@ -190,10 +190,10 @@ export default function Home() {
               </h1>
               <div className="flex flex-col gap-3 py-10 bg-[rgba(67,_133,_245,_0.05)] rounded-3xl px-11">
                 <h1 className="text-[#333] text-xl font-semibold">
-                  &#183; Best{" "}
+                  &#183; Best
                   <span className="text-primary">
                     Website Designing Company
-                  </span>{" "}
+                  </span>
                   In Siliguri
                 </h1>
                 <p className="text-base text-secondary max-w-[77ch]">
@@ -228,7 +228,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
       </main>
     </>
   );

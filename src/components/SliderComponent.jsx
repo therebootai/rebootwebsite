@@ -36,7 +36,7 @@ const SliderComponent = ({ slides = [] }) => {
     autoplay: true,
     cssEase: "linear",
     speed: 6000,
-    autoplaySpeed: 500,
+    autoplaySpeed: 2000,
     arrows: false,
     centerPadding: "60px",
   };
