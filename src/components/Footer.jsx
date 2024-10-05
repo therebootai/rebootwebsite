@@ -1,4 +1,3 @@
-import { Be_Vietnam_Pro } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,11 +5,6 @@ import { FaGlobe, FaPhoneVolume } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
 import { HiLocationMarker, HiOutlineCurrencyRupee } from "react-icons/hi";
 import { BsChatQuote } from "react-icons/bs";
-
-const beVietnamPro = Be_Vietnam_Pro({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 const Footer = () => {
   const footerLinks = [
@@ -214,13 +208,13 @@ const Footer = () => {
 
   return (
     <footer
-      className={`bg-[url('/images/footer-bg.png')] bg-cover bg-no-repeat ${beVietnamPro.style.fontFamily}`}
+      className={`bg-[url('/images/footer-bg.png')] bg-cover bg-no-repeat`}
     >
-      <div className="bg-[#222]/85 p-16 flex flex-col gap-11">
+      <div className="bg-[#222]/85 p-8 xlg:p-16 flex flex-col gap-11">
         <div className="flex justify-between gap-8">
           {footerLinks.map((item, index) => (
             <div className="flex flex-col gap-3" key={index}>
-              <h2 className="text-sm font-bold text-justify text-white flex items-center gap-1">
+              <h2 className="text-base font-bold text-justify text-white flex items-center gap-1">
                 <span>{item.head}</span>
                 <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
               </h2>
@@ -245,9 +239,9 @@ const Footer = () => {
               <Image
                 src="/logo.svg"
                 alt="logo"
-                width={420}
-                height={51}
-                className="w-[23.12vw]"
+                width={253}
+                height={46}
+                className="w-[17.5vw]"
               />
             </Link>
             <p className="text-xs text-white">
@@ -301,24 +295,29 @@ const Footer = () => {
         </div>
         <div className="h-0.5 w-full bg-[rgba(139,139,139,0.6)]"></div>
         <div className="flex justify-between gap-20">
-          <div className="min-h-32 w-[19.65vw] relative">
-            <Image src="/icons/msme.png" alt="msme" fill />
+          <div className="min-h-20 xl:min-h-32 w-[17.65vw] relative">
+            <Image
+              src="/icons/msme.png"
+              alt="msme"
+              fill
+              className="object-contain"
+            />
           </div>
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col justify-between gap-2 xlg:gap-0">
             <button
               type="button"
-              className="text-base font-bold text-white px-10 py-3 bg-primary inline-flex items-center gap-2 rounded-lg"
+              className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-3 bg-primary inline-flex items-center gap-2 rounded-lg"
             >
               <HiOutlineCurrencyRupee /> <span>Pay Online</span>
             </button>
             <button
               type="button"
-              className="text-base font-bold text-white px-10 py-3 bg-primary inline-flex items-center gap-2 rounded-lg"
+              className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-3 bg-primary inline-flex items-center gap-2 rounded-lg"
             >
               <BsChatQuote /> <span>Ge A Quote</span>
             </button>
           </div>
-          <div className="min-h-28 w-64 relative bg-white rounded-lg">
+          <div className="xlg:min-h-28 w-48 xlg:w-64 relative bg-white rounded-lg">
             <Image
               src="/icons/google-partner.png"
               alt="google"
@@ -326,9 +325,9 @@ const Footer = () => {
               className="object-contain"
             />
           </div>
-          <div className="min-h-28 w-64 relative bg-white rounded-lg">
+          <div className="xlg:min-h-28 w-48 xlg:w-64 relative bg-white rounded-lg">
             <Image
-              src="/partner-image-2.png"
+              src="/icons/meta-business-partner-logo.webp"
               alt="meta"
               fill
               className="object-contain"
