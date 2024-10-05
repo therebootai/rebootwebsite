@@ -71,7 +71,7 @@ const ClientReview = () => {
   };
   return (
     <section className="xl:p-16 lg:p-8 sm:p-4 ">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 flex-1">
         <h2 className="text-[#333] text-xl font-semibold">
           Let&apos;s See Some Reviews
         </h2>
@@ -85,7 +85,7 @@ const ClientReview = () => {
                 <div className="!flex flex-col gap-3 py-10 bg-[rgba(67,_133,_245,_0.05)] rounded-3xl px-11">
                   <h1 className="text-[#333] text-xl font-semibold">
                     &#183; Best
-                    <span className="text-primary">
+                    <span className="text-primary space-x-0.5">
                       Website Designing Company
                     </span>
                     In Siliguri
