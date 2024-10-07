@@ -14,7 +14,7 @@ export default function Home() {
   const awardsLogo = [
     "/icons/google-partner-logo.webp",
     "/icons/meta-business-partner-logo.webp",
-    "/icons/google-partner-logo.webp",
+    "/icons/makeinindia.webp",
   ];
 
   return (
@@ -31,7 +31,7 @@ export default function Home() {
           loop
           muted
           preload="auto"
-          className="w-full max-h-[33.3vw] xlg:max-h-[45.5vw] object-fill"
+          className="w-full max-h-[50.3vw] xlg:max-h-[45.5vw] object-fill"
         />
         <section className="flex xlg:gap-11 xl:gap-12 justify-evenly  items-center my-20 mx-8 xlg:mx-24 xl:mx-28">
           <h1 className="text-[#333] max-w-[11ch] font-semibold lg:text-3xl xlg:text-4xl">
@@ -76,7 +76,7 @@ export default function Home() {
                 Our Creative Design
               </h1>
               <div className="flex gap-6">
-                <div className="relative size-[21.25vw]">
+                <div className="relative size-[45.25vw] lg:size-[21.25vw]">
                   <Image
                     src="/our-creative-design-1.png"
                     alt="creative design"
@@ -84,7 +84,7 @@ export default function Home() {
                     className="object-cover rounded-lg"
                   />
                 </div>
-                <div className="relative size-[21.25vw]">
+                <div className="relative size-[45.25vw] lg:size-[21.25vw]">
                   <Image
                     src="/our-creative-design-2.png"
                     alt="creative design"
