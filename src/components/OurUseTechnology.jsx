@@ -22,6 +22,8 @@ const OurUseTechnology = () => {
     { imgsrc: "/images/css-logo.webp", imgalt: "css" },
     { imgsrc: "/images/tailwindcss-logo.webp", imgalt: "tailwindcss" },
     { imgsrc: "/images/react-native-logo.webp", imgalt: "react-native" },
+    { imgsrc: "/images/react-logo.webp", imgalt: "react-js" },
+
     { imgsrc: "/images/python-logo.webp", imgalt: "python" },
     { imgsrc: "/images/PostgreSQL-logo.webp", imgalt: "PostgreSQL" },
     {
