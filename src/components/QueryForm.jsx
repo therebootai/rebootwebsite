@@ -3,7 +3,7 @@ import React from "react";
 
 const QueryForm = () => {
   return (
-    <div className="flex flex-col bg-[rgba(67,_133,_245,_0.05)] rounded-lg px-8 min-w-[30rem] xl:min-w-[40rem] flex-1 py-5">
+    <div className="flex flex-col bg-[rgba(67,_133,_245,_0.05)] rounded-lg px-8 lg:min-w-[30rem] xl:min-w-[40rem] flex-1 py-5">
       <Image
         src="/icons/query-icon.png"
         alt="query icon"

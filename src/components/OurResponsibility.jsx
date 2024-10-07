@@ -90,8 +90,8 @@ const OurResponsibility = ({ showsection }) => {
   ];
   return (
     <section className="bg-[#4385F50D] xl:p-16 lg:p-8 sm:p-4 flex flex-col gap-6">
-      <section className="flex flex-row gap-6 justify-between ">
-        <section className="w-[50%] flex flex-col gap-4">
+      <section className="flex flex-col lg:flex-row gap-6 justify-between ">
+        <section className="lg:w-[50%] flex flex-col gap-4">
           <section className="flex flex-col gap-2">
             <h3 className="text-[#333333] md:text-xl xlg:text-2xl font-medium">
               Your <span className="text-primary">Business,</span>
@@ -124,7 +124,7 @@ const OurResponsibility = ({ showsection }) => {
             sit ac. A sit sagittis consectetur proin.
           </p>
         </section>
-        <section className="lg:w-[40%] md:w-[50%] flex flex-col gap-8">
+        <section className="lg:w-[40%] flex flex-col gap-8">
           <h1 className="xlg:text-4xl md:text-2xl font-semibold text-primary">
             Let’ See <br />
             <span className="text-[#333333]">How Will</span> You Benefit?

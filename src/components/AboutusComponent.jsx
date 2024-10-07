@@ -49,7 +49,7 @@ const AboutusComponent = ({ showsection }) => {
         <h1 className="text-primary text-3xl xlg:text-5xl font-semibold">
           We are dedicated to your Brand business.
         </h1>
-        <p className="text-secondary text-base xlg:mt-4 line-clamp-[13] 2xl:line-clamp-none">
+        <p className="text-secondary text-base xlg:mt-4 lg:line-clamp-[11] xlg:line-clamp-[13] 2xl:line-clamp-none">
           Lorem ipsum dolor sit amet consectetur. Tincidunt non et et integer
           tempus nibh. Scelerisque ullamcorper integer egestas proin molestie
           tristique adipiscing. Tristique morbi risus scelerisque dignissim
