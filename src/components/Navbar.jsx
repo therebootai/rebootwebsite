@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { AiOutlineMenuFold } from "react-icons/ai";
 import React, { useEffect, useState } from "react";
+import { IoCloseSharp } from "react-icons/io5";
 
 const Navbar = () => {
   const router = useRouter();
   const [isScrolling, setIsScrolling] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const isActive = (path) => router.asPath === path;
 
@@ -215,11 +218,11 @@ const Navbar = () => {
     <nav
       className={`${
         isScrolling
-          ? "bg-black/90"
-          : "bg-[linear-gradient(180deg,_rgba(0,_0,_0,_0.80)_0%,_rgba(0,_0,_0,_0.00)_100%)]"
-      } pt-5 pb-14 px-8 xlg:px-14 xl:px-16 fixed w-full top-0 left-0 z-[1100] transition-all duration-500`}
+          ? "bg-black/90 lg:pb-5"
+          : "bg-[linear-gradient(180deg,_rgba(0,_0,_0,_0.80)_0%,_rgba(0,_0,_0,_0.00)_100%)] lg:pb-14"
+      } pt-5 pb-5 px-8 xlg:px-14 xl:px-16 fixed w-full top-0 left-0 z-[1100] transition-all duration-500`}
     >
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center relative">
         <Link href="/">
           <Image
             src="/logo.svg"
@@ -229,7 +232,7 @@ const Navbar = () => {
             className="w-[17.5vw]"
           />
         </Link>
-        <ul className="flex items-center justify-center gap-5">
+        <ul className="hidden lg:flex items-center justify-center gap-5">
           {navLinks.map((item, index) => (
             <li key={index} className="relative group">
               <Link
@@ -273,11 +276,88 @@ const Navbar = () => {
         </ul>
         <Link
           href="/contact-us"
-          className="text-center text-sm font-semibold text-white inline-flex items-center justify-center bg-[#09f] gap-1 px-2 xlg:px-4 py-1 xlg:py-2 rounded"
+          className="text-center text-sm font-semibold text-white hidden lg:inline-flex items-center justify-center bg-[#09f] gap-1 px-2 xlg:px-4 py-1 xlg:py-2 rounded"
         >
           Book an Appointment
         </Link>
+        <button
+          type="button"
+          className="inline-flex lg:hidden text-3xl"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <svg width="0" height="0">
+            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#3FFF74" />
+              <stop offset="100%" stopColor="#0A5BFF" />
+            </linearGradient>
+          </svg>
+          <span
+            className={`transform transition-transform duration-500 ${
+              isMenuOpen ? "rotate-180" : "rotate-0"
+            }`}
+          >
+            {isMenuOpen ? (
+              <IoCloseSharp
+                style={{
+                  fill: "url(#gradient1)",
+                }}
+              />
+            ) : (
+              <AiOutlineMenuFold
+                style={{
+                  fill: "url(#gradient1)",
+                }}
+              />
+            )}
+          </span>
+        </button>
       </div>
+      {isMenuOpen && (
+        <div className="bg-black/90 absolute top-full w-full left-0 lg:hidden p-6 rounded-b-lg overflow-y-scroll">
+          <ul className="flex flex-col justify-center gap-5">
+            {navLinks.map((item, index) => (
+              <li key={index} className="relative group">
+                <Link
+                  href={item.href}
+                  className={`${
+                    isActive(item.href) ? "text-primary" : "text-white"
+                  } text-base xlg:text-lg xl:text-xl font-medium capitalize hover:text-primary`}
+                >
+                  {item.text}
+                </Link>
+                {item.subMenu && (
+                  <div className="duration-500 transition-all origin-top overflow-y-scroll h-0 group-focus-within:h-auto opacity-0 group-focus-within:opacity-100 flex flex-col rounded">
+                    {item.subMenu.map((menu, con) => (
+                      <div
+                        className="text-white flex flex-col gap-6 whitespace-nowrap p-2"
+                        key={con}
+                      >
+                        <h1 className="text-base xlg:text-lg font-semibold flex items-center gap-2">
+                          {menu.heading}{" "}
+                          <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
+                        </h1>
+                        <ul className="flex flex-col gap-4">
+                          {menu.menus.map((link, indx) => (
+                            <li key={indx} className="text-base xlg:text-lg">
+                              <Link
+                                href={link.href}
+                                className="flex items-center gap-2"
+                              >
+                                <span className="text-primary">&gt;</span>
+                                {link.text}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
