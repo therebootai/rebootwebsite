@@ -7,6 +7,7 @@ const BlogDetails = () => {
       <Head>
         <title>RebootAi | Blog Details</title>
       </Head>
+      
     </>
   );
 };
