@@ -46,41 +46,41 @@ const CaseStudies = ({ pageData }) => {
         <title>Reboot AI | Case Studies</title>
       </Head>
       <SubPageBanner heading={"Case Studies"} />
-      <main className="py-11 px-16 flex flex-col gap-6">
-        <div className="flex gap-6 justify-between">
+      <main className="py-11 px-8 md:px-12 xlg:px-16 flex flex-col gap-6">
+        <div className="flex gap-6 justify-between overflow-hidden lg:overflow-visible overflow-x-scroll lg:overflow-x-visible">
           <button
             type="button"
-            className="text-2xl font-medium text-center px-14 py-2 bg-primary hover:bg-primary text-white rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
+            className="text-base lg:text-xl xlg:text-2xl font-medium text-center text-nowrap px-10 xlg:px-14 py-2 bg-primary hover:bg-primary text-white rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
           >
             View All
           </button>
           <button
             type="button"
-            className="text-2xl font-medium text-center px-14 py-2 bg-primary/10 text-primary hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
+            className="text-xl xlg:text-2xl font-medium text-center px-10 xlg:px-14 py-2 bg-primary/10 text-primary hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
           >
             Website
           </button>
           <button
             type="button"
-            className="text-2xl font-medium text-center px-14 py-2 bg-primary/10 text-primary hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
+            className="text-xl xlg:text-2xl font-medium text-center px-10 xlg:px-14 py-2 bg-primary/10 text-primary hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
           >
             Webapps
           </button>
           <button
             type="button"
-            className="text-2xl font-medium text-center px-14 py-2 bg-primary/10 text-primary hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
+            className="text-xl xlg:text-2xl font-medium text-center px-10 xlg:px-14 py-2 bg-primary/10 text-primary hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
           >
             Mobile
           </button>
           <button
             type="button"
-            className="text-2xl font-medium text-center px-14 py-2 bg-primary/10 text-primary hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
+            className="text-xl xlg:text-2xl font-medium text-center px-10 xlg:px-14 py-2 bg-primary/10 text-primary hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
           >
             Brands
           </button>
         </div>
         <div className="w-full h-0.5 bg-[#aaa]"></div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
           {pageData.map((dtat, index) => (
             <CaseComponent cases={dtat} key={index} />
           ))}
