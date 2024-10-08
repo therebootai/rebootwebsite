@@ -4,44 +4,46 @@ import React from "react";
 const ServiceAndproductPage1stpart = ({ content }) => {
   const { serviceimg, servicename, servicedesc1, servicedesc2 } = content;
   return (
-    <section className="xl:p-16 lg:p-8 sm:p-4 flex flex-row gap-4 justify-between">
-      <div className="w-[42%] flex flex-col gap-4">
+    <section className="xl:p-16 lg:p-8 sm:p-4 flex xs:flex-col md:flex-row gap-4 justify-between">
+      <div className="md:w-[42%] xs:w-full flex flex-col gap-4">
         <section className="">
           <Image
             src={serviceimg}
             alt={servicename}
             width={512}
             height={610}
-            className="w-full h-[80vh] object-cover rounded-md"
+            className="w-full xs:h-full md:h-[50vh] lg:h-[80vh] object-cover rounded-md"
           />
         </section>
         <section className="flex flex-col">
-          <p className="text-2xl font-medium text-[#333333]">
+          <p className="xlg:text-2xl text-xl font-medium text-[#333333]">
             Are Your <span className="text-primary"> Ready,</span>
           </p>
-          <p className="text-4xl font-semibold text-[#333333]">
+          <p className="xlg:text-4xl text-3xl font-semibold text-[#333333]">
             To Grow <span className="text-primary">Your Business</span>
           </p>
-          <p className="text-2xl font-medium text-[#333333]">
+          <p className="xlg:text-2xl text-xl font-medium text-[#333333]">
             Make More <span className="text-primary">Benefits</span>
           </p>
         </section>
       </div>
-      <section className="w-[55%] flex flex-col gap-6">
+      <section className="md:w-[55%] xs:w-full flex flex-col gap-4 xlg:gap-6">
         <section className="flex flex-col gap-2">
-          <h2 className="text-3xl font-medium ">Service</h2>
-          <h1 className=" text-5xl font-semibold text-primary ">
+          <h2 className="xlg:text-3xl md:text-xl text-2xl font-medium ">
+            Service
+          </h2>
+          <h1 className=" md:text-3xl text-3xl xlg:text-5xl font-semibold text-primary ">
             {servicename} <br /> Services
           </h1>
         </section>
         <section className="flex flex-col gap-4">
-          <p className="text-xl/[30px] ">{servicedesc1}</p>
+          <p className="xlg:text-xl/[30px] text-base/[26px] ">{servicedesc1}</p>
           <p
-            className="text-base/[27px]"
+            className="xlg:text-base/[27px] lg:text-xs/[20px] text-xs"
             dangerouslySetInnerHTML={{ __html: servicedesc2 }}
           ></p>
-          <div className="w-full h-[5rem] rounded-lg flex justify-center items-center mt-4 bg-primary text-white">
-            <span className="text-4xl font-semibold text-white flex items-center w-full justify-center gap-2">
+          <div className="w-full h-[4.5rem] xlg:h-[5rem] rounded-lg flex justify-center items-center xlg:mt-4 bg-primary text-white">
+            <span className="xlg:text-4xl lg:text-3xl md:text-2xl xs:text-2xl font-semibold text-white flex items-center w-full justify-center gap-2">
               <Image
                 src={"/icons/talkicon.svg"}
                 alt="Talk icon"
