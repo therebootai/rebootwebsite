@@ -1,6 +1,7 @@
 import BlogCards from "@/components/BlogCards";
 import SubPageBanner from "@/components/SubPageBanner";
 import Head from "next/head";
+import Link from "next/link";
 import React from "react";
 
 export async function getStaticProps() {
@@ -52,7 +53,9 @@ export default function Blogs({ pageData }) {
       <main className="px-8 md:px-12 xlg:px-16 xl:px-20 py-11 flex flex-col gap-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-stretch gap-6">
           {pageData.map((blog, index) => (
-            <BlogCards blog={blog} key={index} />
+            <Link href="/blogs/1">
+              <BlogCards blog={blog} key={index} />
+            </Link>
           ))}
         </div>
         <div className="self-center flex gap-4">
