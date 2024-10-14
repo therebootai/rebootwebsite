@@ -8,9 +8,55 @@ import OurUseTechnology from "@/components/OurUseTechnology";
 import QueryForm from "@/components/QueryForm";
 import Head from "next/head";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { MdOutlineStarBorder, MdStarRate } from "react-icons/md";
+import Slider from "react-slick/lib/slider";
 
 export default function Home() {
+  const [slidesToShow, setSlidesToShow] = useState(3);
+  const [autoslide, setAutoslide] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 340) {
+        setSlidesToShow(1);
+        setAutoslide(true);
+      } else if (window.innerWidth <= 560) {
+        setSlidesToShow(2);
+        setAutoslide(true);
+      } else if (window.innerWidth <= 860) {
+        setSlidesToShow(3);
+        setAutoslide(false);
+      } else if (window.innerWidth <= 1024) {
+        setSlidesToShow(3);
+        setAutoslide(false);
+      } else if (window.innerWidth <= 1780) {
+        setSlidesToShow(3);
+        setAutoslide(false);
+      } else {
+        setSlidesToShow(3);
+        setAutoslide(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  const settings = {
+    infinite: true,
+    slidesToShow: slidesToShow,
+    slidesToScroll: 1,
+    autoplay: autoslide,
+    speed: 6000,
+    autoplaySpeed: 2000,
+    arrows: false,
+  };
+
   const awardsLogo = [
     "/icons/google-partner-logo.webp",
     "/icons/meta-business-partner-logo.webp",
@@ -33,25 +79,29 @@ export default function Home() {
           preload="auto"
           className="w-full max-h-[50.3vw] xlg:max-h-[45.5vw] object-fill"
         />
-        <section className="flex xlg:gap-11 xl:gap-12 justify-evenly  items-center my-20 mx-8 xlg:mx-24 xl:mx-28">
-          <h1 className="text-[#333] max-w-[11ch] font-semibold lg:text-3xl xlg:text-4xl">
+        <section className="flex xl:gap-8 lg:gap-6 gap-4 justify-evenly  items-center xl:p-16 lg:p-8 p-4">
+          <h1 className="text-[#333] w-[20%] md:w-[15%] font-semibold lg:text-2xl xlg:text-3xl xl:text-4xl">
             Awards &amp; Recognitions
           </h1>
-          <div className="flex xlg:gap-12 xl:gap-14 justify-evenly flex-1 items-center">
-            {awardsLogo.map((src, index) => (
-              <div
-                className="shadow-[0_0_10px_2px_rgba(0,_0,_0,_0.12)] rounded relative bg-white flex justify-center items-center"
-                key={index}
-              >
-                <Image
-                  src={src}
-                  alt="partner logo"
-                  width={272}
-                  height={102}
-                  className="rounded max-w-[18.8vw] min-h-fit"
-                />
-              </div>
-            ))}
+          <div className="md:w-[85%] w-[80%]">
+            <Slider {...settings}>
+              {awardsLogo.map((src, index) => (
+                <div
+                  className="  bg-white !flex w-full justify-center items-center p-2 md:p-4"
+                  key={index}
+                >
+                  <div className="flex justify-center items-center w-full lg:w-[95%] xl:w-[90%] shadow-[0_0_10px_2px_rgba(0,_0,_0,_0.12)] rounded">
+                    <Image
+                      src={src}
+                      alt="partner logo"
+                      width={1280}
+                      height={720}
+                      className="rounded md:h-[6rem] h-[6rem] lg:h-[8rem] xlg:h-[10rem] w-fit "
+                    />
+                  </div>
+                </div>
+              ))}
+            </Slider>
           </div>
         </section>
 
