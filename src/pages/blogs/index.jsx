@@ -53,8 +53,8 @@ export default function Blogs({ pageData }) {
       <main className="px-8 md:px-12 xlg:px-16 xl:px-20 py-11 flex flex-col gap-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-stretch gap-6">
           {pageData.map((blog, index) => (
-            <Link href="/blogs/1">
-              <BlogCards blog={blog} key={index} />
+            <Link key={index} href="/blogs/1">
+              <BlogCards blog={blog} />
             </Link>
           ))}
         </div>
