@@ -10,7 +10,12 @@ const Navbar = () => {
   const [isScrolling, setIsScrolling] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const isActive = (path) => router.asPath === path;
+  const isActive = (path) => {
+    if (path === "/" && router.asPath === "/") return true;
+
+    // Check if the current path starts with the given path (for other routes)
+    if (path !== "/" && router.asPath.startsWith(path)) return true;
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +43,7 @@ const Navbar = () => {
     },
     {
       text: "about us",
-      href: "#",
+      href: "/about",
       subMenu: [
         {
           heading: "About Reboot AI",
@@ -73,7 +78,7 @@ const Navbar = () => {
     },
     {
       text: "services",
-      href: "#",
+      href: "/services",
       subMenu: [
         {
           heading: "Web Development",
@@ -179,7 +184,7 @@ const Navbar = () => {
     },
     {
       text: "Products",
-      href: "#",
+      href: "/products",
       subMenu: [
         {
           heading: "Our Live Products",
@@ -239,6 +244,8 @@ const Navbar = () => {
                 href={item.href}
                 className={`${
                   isActive(item.href) ? "text-primary" : "text-white"
+                } ${
+                  item.subMenu && "pointer-events-none"
                 } text-base xlg:text-lg xl:text-xl font-medium capitalize hover:text-primary`}
               >
                 {item.text}

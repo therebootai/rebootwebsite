@@ -8,7 +8,7 @@ const AboutusComponent = ({ showsection }) => {
         <div className="flex flex-col justify-between gap-2 md:gap-6 lg:gap-0">
           <div className=" min-w-[50vw] min-h-[25vmax] md:min-w-[60vw] lg:min-w-0 lg:w-[30vw] xl:w-[22vw] md:min-h-[30vmax] lg:min-h-[23.83vmax] xl:min-h-[20.83vmax] relative">
             <Image
-              src="/home-about-1.png"
+              src="/home-about-1.webp"
               alt="about-us"
               fill
               className="object-cover rounded-lg"
@@ -18,7 +18,7 @@ const AboutusComponent = ({ showsection }) => {
             <div className="md:w-[30vw] w-[25vw] lg:w-[14.3vw] xl:w-[10.3vw] min-h-[20vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax] relative">
               <Image
                 fill
-                src="/home-about-2.png"
+                src="/home-about-2.webp"
                 alt="about us"
                 className="object-cover rounded-lg"
               />
@@ -26,7 +26,7 @@ const AboutusComponent = ({ showsection }) => {
             <div className="relative md:w-[30vw] w-[25vw]  lg:w-[14.3vw] xl:w-[10.3vw] min-h-[20vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax]">
               <Image
                 fill
-                src="/home-about-3.png"
+                src="/home-about-3.webp"
                 alt="about us"
                 className="object-cover rounded-lg"
               />
@@ -36,13 +36,13 @@ const AboutusComponent = ({ showsection }) => {
         <div className="w-full flex-1 lg:w-[13.125vw] min-h-[33.8vmax] relative">
           <Image
             fill
-            src="/home-about-4.png"
+            src="/home-about-4.webp"
             alt="about us"
             className="object-cover rounded-lg"
           />
         </div>
       </div>
-      <div className="flex flex-col justify-between gap-2">
+      <div className="flex flex-col gap-5 justify-between">
         <h3 className="text-black font-semibold text-xl xlg:text-3xl capitalize">
           About Us!
         </h3>
