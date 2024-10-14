@@ -4,9 +4,9 @@ import React from "react";
 const AboutusComponent = ({ showsection }) => {
   return (
     <section className="flex flex-col lg:flex-row justify-between xl:p-16 lg:p-8 p-4 gap-9">
-      <div className="flex gap-5">
-        <div className="flex flex-col justify-between gap-6 lg:gap-0">
-          <div className="min-w-[60vw] lg:min-w-0 lg:w-[30vw] xl:w-[22vw] min-h-[30vmax] lg:min-h-[23.83vmax] xl:min-h-[20.83vmax] relative">
+      <div className="flex gap-2 md:gap-5">
+        <div className="flex flex-col justify-between gap-2 md:gap-6 lg:gap-0">
+          <div className=" min-w-[50vw] min-h-[25vmax] md:min-w-[60vw] lg:min-w-0 lg:w-[30vw] xl:w-[22vw] md:min-h-[30vmax] lg:min-h-[23.83vmax] xl:min-h-[20.83vmax] relative">
             <Image
               src="/home-about-1.png"
               alt="about-us"
@@ -15,7 +15,7 @@ const AboutusComponent = ({ showsection }) => {
             />
           </div>
           <div className="flex justify-between gap-4">
-            <div className="w-[30vw] lg:w-[14.3vw] xl:w-[10.3vw] min-h-[25.7vmax] lg:min-h-[11.7vmax] relative">
+            <div className="md:w-[30vw] w-[25vw] lg:w-[14.3vw] xl:w-[10.3vw] min-h-[20vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax] relative">
               <Image
                 fill
                 src="/home-about-2.png"
@@ -23,7 +23,7 @@ const AboutusComponent = ({ showsection }) => {
                 className="object-cover rounded-lg"
               />
             </div>
-            <div className="relative w-[30vw] lg:w-[14.3vw] xl:w-[10.3vw] min-h-[25.7vmax] lg:min-h-[11.7vmax]">
+            <div className="relative md:w-[30vw] w-[25vw]  lg:w-[14.3vw] xl:w-[10.3vw] min-h-[20vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax]">
               <Image
                 fill
                 src="/home-about-3.png"
@@ -49,7 +49,7 @@ const AboutusComponent = ({ showsection }) => {
         <h1 className="text-primary text-3xl xlg:text-5xl font-semibold">
           We are dedicated to your Brand business.
         </h1>
-        <p className="text-secondary text-base xlg:mt-4 lg:line-clamp-[11] xlg:line-clamp-[13] 2xl:line-clamp-none">
+        <p className="text-secondary text-sm/[22px] md:text-base xlg:mt-4 lg:line-clamp-[11] xlg:line-clamp-[13] 2xl:line-clamp-none">
           Lorem ipsum dolor sit amet consectetur. Tincidunt non et et integer
           tempus nibh. Scelerisque ullamcorper integer egestas proin molestie
           tristique adipiscing. Tristique morbi risus scelerisque dignissim

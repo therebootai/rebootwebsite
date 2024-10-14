@@ -93,15 +93,15 @@ const OurResponsibility = ({ showsection }) => {
       <section className="flex flex-col lg:flex-row gap-6 justify-between ">
         <section className="lg:w-[50%] flex flex-col gap-4">
           <section className="flex flex-col gap-2">
-            <h3 className="text-[#333333] md:text-xl xlg:text-2xl font-medium">
+            <h3 className="text-[#333333] text-xl md:text-xl xlg:text-2xl font-medium">
               Your <span className="text-primary">Business,</span>
             </h3>
-            <h1 className="text-[#333333] md:text-2xl xlg:text-4xl font-semibold">
+            <h1 className="text-[#333333] text-2xl md:text-2xl xlg:text-4xl font-semibold">
               It&apos;s Our Responsibility To <br /> Grow
               <span className="text-primary">Your Business</span>
             </h1>
           </section>
-          <p className="xlg:text-sm/[20px] lg:text-xs/[18px] md:text-[10px]/[15px] text-[#333333]">
+          <p className="xlg:text-sm/[20px] lg:text-xs/[18px] md:text-[10px]/[15px] text-xs/[20px] text-[#333333]">
             Lorem ipsum dolor sit amet consectetur. Pretium sem quis feugiat
             velit risus nec nunc. Tristique amet cursus tellus ornare. Cursus
             quam ipsum viverra non duis viverra volutpat laoreet. Ac feugiat eu
@@ -125,7 +125,7 @@ const OurResponsibility = ({ showsection }) => {
           </p>
         </section>
         <section className="lg:w-[40%] flex flex-col gap-8">
-          <h1 className="xlg:text-4xl md:text-2xl font-semibold text-primary">
+          <h1 className="xlg:text-4xl md:text-2xl text-xl font-semibold text-primary">
             Let’ See <br />
             <span className="text-[#333333]">How Will</span> You Benefit?
           </h1>
@@ -138,10 +138,10 @@ const OurResponsibility = ({ showsection }) => {
                     alt={item.name}
                     width={244}
                     height={200}
-                    className="w-full md:h-[2.5rem] xlg:h-[3rem]"
+                    className="w-full h-[2.2rem] md:h-[2.5rem] xlg:h-[3rem]"
                   />
                 </i>
-                <h1 className="xlg:text-3xl md:text-2xl font-medium text-[#333333]">
+                <h1 className="xlg:text-3xl text-xl md:text-2xl font-medium text-[#333333]">
                   {item.name}
                 </h1>
               </section>
