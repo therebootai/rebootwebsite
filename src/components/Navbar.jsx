@@ -186,7 +186,7 @@ const Navbar = () => {
           menus: [
             {
               text: "Educational Consultant CRM",
-              href: "/educational_consultant_crm",
+              href: "/products/educational_consultant_crm",
             },
             {
               text: "Clinic Management Software",
