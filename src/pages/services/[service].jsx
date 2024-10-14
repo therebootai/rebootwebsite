@@ -1,11 +1,17 @@
 import ServicePageDesign from "@/components/ServicePageDesign";
+import Head from "next/head";
 import React from "react";
 
 const CustomWebsiteDevelopment = () => {
   return (
-    <div>
-      <ServicePageDesign />
-    </div>
+    <>
+      <Head>
+        <title>Reboot AI | Services</title>
+      </Head>
+      <div>
+        <ServicePageDesign />
+      </div>
+    </>
   );
 };
 
