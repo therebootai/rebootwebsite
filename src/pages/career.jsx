@@ -75,11 +75,11 @@ const Career = () => {
               <span className="text-primary"> Reboot</span>
             </h1>
             <p className="lg:text-lg text-sm text-[#666666] ">
-              We're looking for passionate people to join us on our mission. We
-              value flat hierarchies, clear communication, and full ownership
-              and responsibility. We're looking for passionate people to join us
-              on our mission. We value flat hierarchies, clear communication,
-              and full ownership and responsibility.
+              We&#x27;re looking for passionate people to join us on our
+              mission. We value flat hierarchies, clear communication, and full
+              ownership and responsibility. We&#x27;re looking for passionate
+              people to join us on our mission. We value flat hierarchies, clear
+              communication, and full ownership and responsibility.
             </p>
           </div>
         </section>
