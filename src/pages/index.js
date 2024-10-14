@@ -18,7 +18,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 480) {
+      if (window.innerWidth <= 340) {
         setSlidesToShow(1);
         setAutoslide(true);
       } else if (window.innerWidth <= 560) {
@@ -87,16 +87,16 @@ export default function Home() {
             <Slider {...settings}>
               {awardsLogo.map((src, index) => (
                 <div
-                  className="  bg-white !flex w-full justify-center items-center p-4"
+                  className="  bg-white !flex w-full justify-center items-center p-2 md:p-4"
                   key={index}
                 >
-                  <div className="flex justify-center items-center w-[95%] xl:w-[90%] shadow-[0_0_10px_2px_rgba(0,_0,_0,_0.12)] rounded">
+                  <div className="flex justify-center items-center w-full lg:w-[95%] xl:w-[90%] shadow-[0_0_10px_2px_rgba(0,_0,_0,_0.12)] rounded">
                     <Image
                       src={src}
                       alt="partner logo"
                       width={1280}
                       height={720}
-                      className="rounded md:h-[8rem] h-[8rem] lg:h-[8rem] xlg:h-[10rem] w-fit "
+                      className="rounded md:h-[6rem] h-[6rem] lg:h-[8rem] xlg:h-[10rem] w-fit "
                     />
                   </div>
                 </div>
