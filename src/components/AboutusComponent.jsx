@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutusComponent = ({ showsection }) => {
   return (
-    <section className="flex flex-col lg:flex-row justify-between mx-8 xlg:mx-12 xl:mx-16 gap-9">
+    <section className="flex flex-col lg:flex-row justify-between xl:p-16 lg:p-8 p-4 gap-9">
       <div className="flex gap-5">
         <div className="flex flex-col justify-between gap-6 lg:gap-0">
           <div className="min-w-[60vw] lg:min-w-0 lg:w-[30vw] xl:w-[22vw] min-h-[30vmax] lg:min-h-[23.83vmax] xl:min-h-[20.83vmax] relative">
