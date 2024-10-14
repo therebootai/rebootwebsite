@@ -313,7 +313,7 @@ const Navbar = () => {
         </button>
       </div>
       {isMenuOpen && (
-        <div className="bg-black/90 absolute top-full w-full left-0 lg:hidden p-6 rounded-b-lg overflow-y-scroll">
+        <div className="bg-black/90 absolute top-full w-full left-0 lg:hidden p-6 pb-24 rounded-b-lg h-screen overflow-y-scroll">
           <ul className="flex flex-col justify-center gap-5">
             {navLinks.map((item, index) => (
               <li key={index} className="relative group">
