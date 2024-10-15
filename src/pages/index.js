@@ -97,7 +97,7 @@ export default function Home() {
                       width={272}
                       height={102}
                       priority
-                      className="rounded md:h-[6rem] h-[4rem] lg:h-[8rem] xlg:h-[10rem] w-fit "
+                      className="rounded md:h-[5rem] h-[4rem] lg:h-[6rem] xlg:h-[8rem] w-fit "
                     />
                   </div>
                 </div>
