@@ -118,7 +118,12 @@ const ProductsPageDesign = () => {
             </section>
             <section className="flex flex-row gap-4 text-white text-lg">
               <button className=" xs:h-[3rem] lg:h-[2.5rem] xs:px-4 lg:px-8 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md">
-                <img src="/icons/booknow.svg" alt="book now icon" />
+                <Image
+                  width={22}
+                  height={22}
+                  src="/icons/booknow.svg"
+                  alt="book now icon"
+                />
                 Book A Free Demo
               </button>
               <Link
@@ -219,7 +224,12 @@ const ProductsPageDesign = () => {
               Malesuada semper aenean scelerisque venenatis adipiscing enim.
             </p>
             <button className=" h-[2.5rem] md:h-[2.5rem] lg:h-[2.5rem] w-fit text-white xs:px-4 lg:px-8 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md">
-              <img src="/icons/booknow.svg" alt="book now icon" />
+              <Image
+                width={22}
+                height={22}
+                src="/icons/booknow.svg"
+                alt="book now icon"
+              />
               Book A Free Demo
             </button>
           </section>
