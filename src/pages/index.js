@@ -77,7 +77,7 @@ export default function Home() {
           loop
           muted
           preload="auto"
-          className="w-full max-h-[50.3vw] xlg:max-h-[45.5vw] object-fill"
+          className="w-full xlg:max-h-[45.5vw] object-fill"
         />
         <section className="flex xl:gap-8 lg:gap-6 gap-4 justify-evenly  items-center xl:p-16 lg:p-8 p-4">
           <h1 className="text-[#333] w-[20%] md:w-[15%] font-semibold  md:text-lg text-sm lg:text-2xl xlg:text-3xl xl:text-4xl">

@@ -98,7 +98,9 @@ const ServicePageDesign = () => {
               </section>
               <div className="flex flex-row relative items-center gap-4">
                 <div className=" absolute inset-0 top-4 left-2">
-                  <img
+                  <Image
+                    width={41}
+                    height={8}
                     src="/icons/downarrow.svg"
                     alt=""
                     className="lg:h-[2.5rem] xl:h-[3rem] sm:h-[2rem]"
@@ -108,7 +110,9 @@ const ServicePageDesign = () => {
                   Step 2 : Ideation
                 </div>
                 <div className="absolute inset-0 -top-4 left-[75%] ">
-                  <img
+                  <Image
+                    width={78}
+                    height={38}
                     src="/icons/leftarrow.svg"
                     alt=""
                     className="lg:h-[2.5rem] xl:h-[3rem] sm:h-[2rem]"
@@ -125,7 +129,9 @@ const ServicePageDesign = () => {
                   Final Delivery Step
                 </div>
                 <div className="absolute inset-0 -top-2 left-[75%] ">
-                  <img
+                  <Image
+                    width={78}
+                    height={38}
                     src="/icons/leftarrow.svg"
                     alt=""
                     className="lg:h-[2.5rem] xl:h-[3rem] sm:h-[2rem]"
@@ -182,11 +188,21 @@ const ServicePageDesign = () => {
                       <MdEmail />
                     </Link>
                     <button className=" xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md">
-                      <img src="/icons/quote.svg" alt=" get a quote icon" />
+                      <Image
+                        width={17}
+                        height={17}
+                        src="/icons/quote.svg"
+                        alt=" get a quote icon"
+                      />
                       Get A Quote
                     </button>
                     <button className=" xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md">
-                      <img src="/icons/booknow.svg" alt="book now icon" />
+                      <Image
+                        width={17}
+                        height={17}
+                        src="/icons/booknow.svg"
+                        alt="book now icon"
+                      />
                       Book Now
                     </button>
                   </section>
