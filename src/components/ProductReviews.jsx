@@ -53,12 +53,16 @@ const ProductReviews = () => {
               <section className="xl:w-[70%] lg:w-[60%] md:w-[60%] w-full p-4 lg:p-6 rounded-lg text-white bg-primary flex flex-col gap-3 lg:gap-6">
                 <section className="flex flex-row gap-4 lg:gap-8">
                   <section className="xl:w-[10%] xlg:w-[15%] flex gap-1 items-center">
-                    <img
+                    <Image
+                      width={46}
+                      height={82}
                       src="/icons/koma.svg"
                       alt="koma"
                       className="w-full lg:h-full h-[3rem]"
                     />
-                    <img
+                    <Image
+                      width={46}
+                      height={82}
                       src="/icons/koma.svg"
                       alt="koma"
                       className="w-full lg:h-full h-[3rem]"

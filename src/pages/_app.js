@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Loading from "@/components/loading";
 
-const jost = Jost({ subsets: ["latin"] });
+const jost = Jost({ subsets: ["latin"], display: "swap" });
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
