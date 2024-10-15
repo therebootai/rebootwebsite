@@ -5,7 +5,7 @@ const SubPageBanner = ({ heading, subheading }) => {
   return (
     <div className="relative">
       <Image
-        className="w-full h-auto object-cover"
+        className="w-full h-[20vmax] lg:h-[30vmax] xl:h-auto object-cover"
         src={"/images/subbannerbg.png"}
         width={5760}
         height={1200}
@@ -13,10 +13,10 @@ const SubPageBanner = ({ heading, subheading }) => {
       />
 
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center h-full">
-        <h1 className="sm:text-xl md:text-2xl font-semibold lg:text-3xl text-white text-center text-shadow">
+        <h1 className="text-lg  md:text-xl font-semibold lg:text-3xl text-white text-center text-shadow">
           {heading}
         </h1>
-        <h2 className="text-lg font-medium text-white">
+        <h2 className="lg:text-lg md:text-sm text-xs font-medium text-white">
           Home &#x203A; {heading} {subheading && <>&#x203A; {subheading}</>}
         </h2>
       </div>
