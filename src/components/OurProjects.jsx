@@ -96,7 +96,7 @@ const OurProjects = () => {
                 className="!flex justify-center items-center"
               >
                 <div
-                  className={`relative w-[90%] transition-all duration-300 rounded-lg h-[30rem] p-8 !flex justify-center items-center ${
+                  className={`relative w-[90%] transition-all duration-300 rounded-lg h-[32rem] p-8 !flex justify-center items-center ${
                     index % 2 === 0
                       ? "bg-[#4385F51A] text-[#4385F5]"
                       : "bg-[#3333331A] text-[#444444]"
@@ -119,7 +119,7 @@ const OurProjects = () => {
                         alt={item.name}
                         layout="fill"
                         objectFit="cover"
-                        className="rounded-lg p-4 h-full"
+                        className="rounded-lg p-4 h-full "
                       />
                       <div className="absolute bottom-6 left-[50%] transform -translate-x-1/2">
                         <Link
