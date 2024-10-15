@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaSearch } from "react-icons/fa";
 import { GoHome } from "react-icons/go";
 
 const Custom404 = () => {
@@ -29,19 +28,7 @@ const Custom404 = () => {
             Please enter the topic which you are looking for
           </h3>
         </div>
-        <div className="px-6 py-3 xlg:py-5 flex justify-between rounded-full border border-[#ccc] self-center">
-          <input
-            type="text"
-            placeholder="Enter the keyword..."
-            className="outline-none bg-transparent placeholder:text-[#ccc] text-[#ccc] text-lg font-medium placeholder:text-lg placeholder:font-medium min-w-[41vmax]"
-          />
-          <button
-            type="button"
-            className="text-xl xlg:text-3xl text-white bg-[#0061FF] rounded-full p-3"
-          >
-            <FaSearch />
-          </button>
-        </div>
+
         <Link
           href="/"
           className="inline-flex py-2 px-4 items-center justify-end self-center bg-[#0061FF] text-base text-center text-white gap-2 rounded"
