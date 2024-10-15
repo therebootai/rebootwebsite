@@ -212,7 +212,7 @@ const Footer = () => {
         <Image
           src="/images/footer-bg.png"
           alt="Footer Background"
-          layout="fill"
+          fill
           quality={100}
           className="opacity-75 object-cover"
         />

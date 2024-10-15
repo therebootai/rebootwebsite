@@ -6,11 +6,16 @@ import OurResponsibility from "@/components/OurResponsibility";
 import OurServices from "@/components/OurServices";
 import OurUseTechnology from "@/components/OurUseTechnology";
 import QueryForm from "@/components/QueryForm";
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { MdOutlineStarBorder, MdStarRate } from "react-icons/md";
-import Slider from "react-slick/lib/slider";
+// import Slider from "react-slick/lib/slider";
+
+const Slider = dynamic(() => import("react-slick/lib/slider"), {
+  ssr: false,
+});
 
 export default function Home() {
   const [slidesToShow, setSlidesToShow] = useState(3);

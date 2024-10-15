@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
 import HeadingComponent from "./HeadingComponent";
 import Image from "next/image";
-import Slider from "react-slick/lib/slider";
+// import Slider from "react-slick/lib/slider";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const Slider = dynamic(() => import("react-slick/lib/slider"), {
+  ssr: false,
+});
 
 const OurProjects = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
