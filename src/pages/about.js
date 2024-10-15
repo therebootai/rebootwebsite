@@ -77,9 +77,9 @@ const About = () => {
   return (
     <section>
       <SubPageBanner heading={"About Us"} />
-      <section className="xl:p-16 lg:p-8 sm:p-4 w-full flex flex-row gap-6">
-        <AboutusComponent showsection={true} />
-      </section>
+
+      <AboutusComponent showsection={true} />
+
       <OurUseTechnology />
       <section className="xl:px-16 lg:px-8 sm:px-4 ">
         <section className="w-full">
