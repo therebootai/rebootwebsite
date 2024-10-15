@@ -38,21 +38,21 @@ const SliderComponent = ({ slides = [] }) => {
     };
   }, []);
   const settings = {
-    infinite: slides.length > slidesToShow,
+    infinite: true,
     centerMode: centermode,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
     cssEase: "linear",
     speed: 6000,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 500,
     arrows: false,
     centerPadding: "60px",
     lazyLoad: "ondemand",
   };
 
   return (
-    <div>
+    <div className="slider-wrapper">
       <Slider {...settings}>
         {slides.map((company, index) => (
           <section
@@ -65,8 +65,8 @@ const SliderComponent = ({ slides = [] }) => {
                 alt={company.imgalt}
                 width={244}
                 height={20}
-                priority={index < slidesToShow}
-                className="w-fit h-[3.5rem] md:h-[6.5rem]"
+                loading="lazy"
+                className="object-contain h-[3.5rem] md:h-[6.5rem]"
               />
             </section>
           </section>
