@@ -38,7 +38,7 @@ const SliderComponent = ({ slides = [] }) => {
     };
   }, []);
   const settings = {
-    infinite: true,
+    infinite: slides.length > slidesToShow,
     centerMode: centermode,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
@@ -48,6 +48,7 @@ const SliderComponent = ({ slides = [] }) => {
     autoplaySpeed: 2000,
     arrows: false,
     centerPadding: "60px",
+    lazyLoad: "ondemand",
   };
 
   return (
@@ -64,6 +65,7 @@ const SliderComponent = ({ slides = [] }) => {
                 alt={company.imgalt}
                 width={244}
                 height={20}
+                priority={index < slidesToShow}
                 className="w-fit h-[3.5rem] md:h-[6.5rem]"
               />
             </section>
