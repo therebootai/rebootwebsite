@@ -6,28 +6,31 @@ const AboutusComponent = ({ showsection }) => {
     <section className="flex flex-col lg:flex-row justify-between xl:p-16 lg:p-8 p-4 gap-9">
       <div className="flex gap-2 md:gap-5">
         <div className="flex flex-col justify-between gap-2 md:gap-6 lg:gap-0">
-          <div className=" min-w-[50vw] min-h-[25vmax] md:min-w-[60vw] lg:min-w-0 lg:w-[30vw] xl:w-[22vw] md:min-h-[30vmax] lg:min-h-[23.83vmax] xl:min-h-[20.83vmax] relative">
+          <div className=" min-w-[50vw] min-h-[20vmax] md:min-w-[60vw] lg:min-w-0 lg:w-[30vw] xl:w-[22vw] md:min-h-[30vmax] lg:min-h-[23.83vmax] xl:min-h-[20.83vmax] relative">
             <Image
               src="/home-about-1.webp"
               alt="about-us"
               fill
+              priority
               className="object-cover rounded-lg"
             />
           </div>
-          <div className="flex justify-between gap-4">
-            <div className="md:w-[30vw] w-[25vw] lg:w-[14.3vw] xl:w-[10.3vw] min-h-[20vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax] relative">
+          <div className="flex justify-between gap-2 md:gap-4">
+            <div className="md:w-[30vw] w-[25vw] lg:w-[14.3vw] xl:w-[10.3vw] min-h-[16vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax] relative">
               <Image
                 fill
                 src="/home-about-2.webp"
                 alt="about us"
+                priority
                 className="object-cover rounded-lg"
               />
             </div>
-            <div className="relative md:w-[30vw] w-[25vw]  lg:w-[14.3vw] xl:w-[10.3vw] min-h-[20vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax]">
+            <div className="relative md:w-[30vw] w-[25vw]  lg:w-[14.3vw] xl:w-[10.3vw] min-h-[16vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax]">
               <Image
                 fill
                 src="/home-about-3.webp"
                 alt="about us"
+                priority
                 className="object-cover rounded-lg"
               />
             </div>
@@ -38,6 +41,7 @@ const AboutusComponent = ({ showsection }) => {
             fill
             src="/home-about-4.webp"
             alt="about us"
+            priority
             className="object-cover rounded-lg"
           />
         </div>

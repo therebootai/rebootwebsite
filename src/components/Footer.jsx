@@ -207,10 +207,17 @@ const Footer = () => {
   ];
 
   return (
-    <footer
-      className={`bg-[url('/images/footer-bg.png')] bg-cover bg-no-repeat`}
-    >
-      <div className="bg-[#222]/85 p-8 xlg:p-16 flex flex-col gap-11">
+    <footer className=" relative">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/footer-bg.png"
+          alt="Footer Background"
+          layout="fill"
+          quality={100}
+          className="opacity-75 object-cover"
+        />
+      </div>
+      <div className="bg-[#222]/85 relative z-10 p-8 xlg:p-16 flex flex-col gap-11">
         <div className="flex flex-col lg:flex-row justify-between gap-8">
           {footerLinks.map((item, index) => (
             <div className="flex flex-col gap-3" key={index}>
