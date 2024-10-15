@@ -5,8 +5,13 @@ import ServiceAndProductPageTechnologySection from "./ServiceAndProductPageTechn
 import Link from "next/link";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import Image from "next/image";
-import Slider from "react-slick/lib/slider";
+// import Slider from "react-slick/lib/slider";
 import ProductReviews from "./ProductReviews";
+import dynamic from "next/dynamic";
+
+const Slider = dynamic(() => import("react-slick/lib/slider"), {
+  ssr: false,
+});
 
 const ProductsPageDesign = () => {
   const content = {

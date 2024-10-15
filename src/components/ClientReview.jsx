@@ -1,6 +1,11 @@
+import dynamic from "next/dynamic";
 import React, { useEffect, useState } from "react";
 import { MdOutlineStarBorder, MdStarRate } from "react-icons/md";
-import Slider from "react-slick/lib/slider";
+// import Slider from "react-slick/lib/slider";
+
+const Slider = dynamic(() => import("react-slick/lib/slider"), {
+  ssr: false,
+});
 
 const ClientReview = () => {
   const reviews = [

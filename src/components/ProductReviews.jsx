@@ -1,7 +1,12 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import React from "react";
 import { MdStarRate } from "react-icons/md";
-import Slider from "react-slick/lib/slider";
+// import Slider from "react-slick/lib/slider";
+
+const Slider = dynamic(() => import("react-slick/lib/slider"), {
+  ssr: false,
+});
 
 const ProductReviews = () => {
   const productreviews = [

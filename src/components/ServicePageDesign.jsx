@@ -6,7 +6,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
-import Slider from "react-slick/lib/slider";
+// import Slider from "react-slick/lib/slider";
+import dynamic from "next/dynamic";
+
+const Slider = dynamic(() => import("react-slick/lib/slider"), {
+  ssr: false,
+});
 
 const ServicePageDesign = () => {
   const settings = {

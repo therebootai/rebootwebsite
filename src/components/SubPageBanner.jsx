@@ -9,6 +9,7 @@ const SubPageBanner = ({ heading, subheading }) => {
         src={"/images/subbannerbg.png"}
         width={5760}
         height={1200}
+        priority
         alt="Background"
       />
 
