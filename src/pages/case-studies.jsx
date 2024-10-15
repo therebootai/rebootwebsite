@@ -7,31 +7,31 @@ export async function getStaticProps() {
   const pageData = [
     {
       site: "www.yourwebsite.com",
-      img: "/case_studies/case-studies-1.png",
+      img: "/case_studies/case-studies-1.webp",
       clientlogo: "/clients/mahabirdoctorhub.webp",
       category: "Institute/College",
     },
     {
       site: "www.yourwebsite.com",
-      img: "/case_studies/case-studies-2.png",
+      img: "/case_studies/case-studies-2.webp",
       clientlogo: "/clients/mahabirdoctorhub.webp",
       category: "Car Rental Services",
     },
     {
       site: "www.yourwebsite.com",
-      img: "/case_studies/case-studies-3.png",
+      img: "/case_studies/case-studies-3.webp",
       clientlogo: "/clients/mahabirdoctorhub.webp",
       category: "Doctor Dental Clinic",
     },
     {
       site: "www.yourwebsite.com",
-      img: "/case_studies/case-studies-4.png",
+      img: "/case_studies/case-studies-4.webp",
       clientlogo: "/clients/mahabirdoctorhub.webp",
       category: "Educational",
     },
     {
       site: "www.yourwebsite.com",
-      img: "/case_studies/case-studies-5.png",
+      img: "/case_studies/case-studies-5.webp",
       clientlogo: "/clients/mahabirdoctorhub.webp",
       category: "Interior Studio",
     },

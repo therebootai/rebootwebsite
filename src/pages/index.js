@@ -94,8 +94,9 @@ export default function Home() {
                     <Image
                       src={src}
                       alt="partner logo"
-                      width={1280}
-                      height={720}
+                      width={272}
+                      height={102}
+                      priority
                       className="rounded md:h-[6rem] h-[6rem] lg:h-[8rem] xlg:h-[10rem] w-fit "
                     />
                   </div>
@@ -128,7 +129,7 @@ export default function Home() {
               <div className="flex gap-6">
                 <div className="relative size-[45.25vw] lg:size-[21.25vw]">
                   <Image
-                    src="/our-creative-design-1.png"
+                    src="/our-creative-design-1.webp"
                     alt="creative design"
                     fill
                     className="object-cover rounded-lg"
@@ -136,7 +137,7 @@ export default function Home() {
                 </div>
                 <div className="relative size-[45.25vw] lg:size-[21.25vw]">
                   <Image
-                    src="/our-creative-design-2.png"
+                    src="/our-creative-design-2.webp"
                     alt="creative design"
                     fill
                     className="object-cover rounded-lg"
