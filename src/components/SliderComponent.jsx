@@ -1,6 +1,11 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
+
+const Slider = dynamic(() => import("react-slick"), {
+  ssr: false,
+});
 
 const SliderComponent = ({ slides = [] }) => {
   const [slidesToShow, setSlidesToShow] = useState(5);

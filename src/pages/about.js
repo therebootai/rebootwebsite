@@ -3,10 +3,14 @@ import ClientReview from "@/components/ClientReview";
 import OurResponsibility from "@/components/OurResponsibility";
 import OurUseTechnology from "@/components/OurUseTechnology";
 import SubPageBanner from "@/components/SubPageBanner";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import Slider from "react-slick/lib/slider";
+// import Slider from "react-slick/lib/slider";
 
+const Slider = dynamic(() => import("react-slick/lib/slider"), {
+  ssr: false,
+});
 const About = () => {
   const vissionmission = [
     {
