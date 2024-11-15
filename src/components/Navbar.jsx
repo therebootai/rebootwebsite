@@ -195,11 +195,11 @@ const Navbar = () => {
             },
             {
               text: "Clinic Management Software",
-              href: "/clinic_management_software",
+              href: "/products/clinic_management_software",
             },
             {
               text: "Service Center Management CRM ",
-              href: "/service_center_management_crm",
+              href: "/products/service_center_management_crm",
             },
           ],
         },
