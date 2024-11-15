@@ -68,6 +68,12 @@ export default function Home() {
     "/icons/makeinindia.webp",
   ];
 
+  const aboutcontent = {
+    aboutcontent:
+      "At Reboot AI Private Limited, our mission is to enhance the competitiveness and agility of companies through innovative software solutions. We empower individuals and organizations with exceptional design, reliable technology, and ongoing support to drive transformation within their industries. Based in Siliguri, West Bengal, we offer comprehensive services across India. Our offerings include web and app development, as well as business and IT consulting. Our development processes are designed to boost productivity and enable businesses to scale using modern techniques. </br> As a Google Partner Firm, we specialize in delivering exceptional services to enhance website security in response to the evolving landscape of organic and paid marketing. Our team comprises skilled security professionals equipped with advanced tools to identify, upgrade, and eliminate any malicious activities. We offer a comprehensive range of expertise across sales, support, marketing, and business development to meet all your business requirements. Our current projects include an Educational Consultant CRM, Clinic Management Software, and Service Centre Management solutions. With our custom development services, clients can tailor solutions to their specific needs. We foster digital innovation through user experience-driven engineering, design thinking, product accelerators for streamlined delivery, and strategic partnerships.</br> Ensure your digital products and services offer exceptional security, reliability, and performance to distinguish yourself in the online landscape.",
+    heading: "Crafting Intelligent Web & App Solutions with AI",
+  };
+
   return (
     <>
       <Head>
@@ -82,7 +88,7 @@ export default function Home() {
           loop
           muted
           preload="auto"
-          className="w-full xlg:max-h-[45.5vw] object-fill"
+          className="w-full h-full "
         />
         <section className="flex xl:gap-8 lg:gap-6 gap-4 justify-evenly  items-center xl:p-16 lg:p-8 p-4">
           <h1 className="text-[#333] w-[20%] md:w-[15%] font-semibold  md:text-lg text-sm lg:text-2xl xlg:text-3xl xl:text-4xl">
@@ -111,7 +117,7 @@ export default function Home() {
           </div>
         </section>
 
-        <AboutusComponent showsection={false} />
+        <AboutusComponent showsection={false} content={aboutcontent} />
 
         <OurUseTechnology />
         <OurServices />

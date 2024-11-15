@@ -50,34 +50,34 @@ const OurProjects = () => {
 
   const projects = [
     {
-      name: "Interior Website Development",
-      image: "/images/project1.png",
-      link: "https://fasterrefrigeration.in/",
+      name: "Logo Design",
+      image: "/images/Logo-Design.webp",
+      link: "",
     },
     {
-      name: "Pharma App Development",
-      image: "/images/project1.png",
-      link: "https://fasterrefrigeration.in/",
+      name: "Student App Development",
+      image: "/images/student-app-development.webp",
+      link: "",
     },
     {
-      name: "Food App Development",
-      image: "/images/project1.png",
-      link: "https://fasterrefrigeration.in/",
+      name: "Creative UI Design",
+      image: "/images/creative-ui-design.webp",
+      link: "",
     },
     {
-      name: "Interior Website Development",
-      image: "/images/project1.png",
-      link: "https://fasterrefrigeration.in/",
+      name: "Dental Clinic Management",
+      image: "/images/dental-clinic-management.webp",
+      link: "",
     },
     {
-      name: "Pharma App Development",
-      image: "/images/project1.png",
-      link: "https://fasterrefrigeration.in/",
+      name: "Education SAAS Development",
+      image: "/images/education-saas-development.webp",
+      link: "",
     },
     {
-      name: "Food App Development",
-      image: "/images/project1.png",
-      link: "https://fasterrefrigeration.in/",
+      name: "Service Center CRM",
+      image: "/images/service-center-crm.webp",
+      link: "",
     },
   ];
 
@@ -96,7 +96,7 @@ const OurProjects = () => {
                 className="!flex justify-center items-center"
               >
                 <div
-                  className={`relative w-[90%] transition-all duration-300 rounded-lg h-[30rem] p-8 !flex justify-center items-center ${
+                  className={`relative w-[90%] transition-all duration-300 rounded-lg h-[32rem] p-8 !flex justify-center items-center ${
                     index % 2 === 0
                       ? "bg-[#4385F51A] text-[#4385F5]"
                       : "bg-[#3333331A] text-[#444444]"
@@ -113,14 +113,16 @@ const OurProjects = () => {
                   }}
                 >
                   {hoveredIndex === index ? (
-                    <div className="absolute inset-0 xs:w-[24rem] rounded-lg md:w-[28rem] z-50 h-full bg-white p-4 border border-[#666666]">
-                      <Image
-                        src={item.image}
-                        alt={item.name}
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-lg p-4 h-full"
-                      />
+                    <div className="absolute inset-0 xs:w-[24rem] rounded-lg md:w-[28rem] z-50 h-full bg-white  ">
+                      <div className=" p-4 relative h-[32rem] boxsh rounded-lg">
+                        <Image
+                          src={item.image}
+                          alt={item.name}
+                          layout="fill"
+                          objectFit="cover"
+                          className="rounded-lg  h-full border border-primary"
+                        />
+                      </div>
                       <div className="absolute bottom-6 left-[50%] transform -translate-x-1/2">
                         <Link
                           href={item.link}
