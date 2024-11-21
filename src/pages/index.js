@@ -5,7 +5,7 @@ import OurProjects from "@/components/OurProjects";
 import OurResponsibility from "@/components/OurResponsibility";
 import OurServices from "@/components/OurServices";
 import OurUseTechnology from "@/components/OurUseTechnology";
-import QueryForm from "@/components/QueryForm";
+
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
@@ -14,6 +14,10 @@ import { MdOutlineStarBorder, MdStarRate } from "react-icons/md";
 // import Slider from "react-slick/lib/slider";
 
 const Slider = dynamic(() => import("react-slick/lib/slider"), {
+  ssr: false,
+});
+
+const QueryForm = dynamic(() => import("@/components/QueryForm"), {
   ssr: false,
 });
 
@@ -128,7 +132,9 @@ export default function Home() {
         <OurResponsibility />
 
         <section className="flex flex-col lg:flex-row px-8 xlg:px-16 gap-6 my-20">
-          <QueryForm />
+          <div className="lg:min-w-[30rem] xl:min-w-[40rem]">
+            <QueryForm />
+          </div>
           <div className="flex flex-col gap-9">
             <div className="flex flex-col gap-4">
               <h2 className="text-[#333] text-xl font-semibold">
