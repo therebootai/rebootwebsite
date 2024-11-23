@@ -28,7 +28,7 @@ const CaseComponent = ({ cases }) => {
           height={4096}
         />
       </div>
-      {/* <div className="flex gap-6">
+      <div className="flex gap-6">
         <Image
           src={cases.clientlogo}
           alt="client"
@@ -49,7 +49,7 @@ const CaseComponent = ({ cases }) => {
             <span className="font-semibold">{cases.category}</span>
           </p>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
