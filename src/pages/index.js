@@ -1,5 +1,3 @@
-import AboutusComponent from "@/components/AboutusComponent";
-
 import OurProduct from "@/components/OurProduct";
 import OurProjects from "@/components/OurProjects";
 import OurResponsibility from "@/components/OurResponsibility";
@@ -16,6 +14,13 @@ const Slider = dynamic(() => import("react-slick/lib/slider"), {
 
 const OurUseTechnology = dynamic(
   () => import("@/components/OurUseTechnology"),
+  {
+    ssr: false,
+  }
+);
+
+const AboutusComponent = dynamic(
+  () => import("@/components/AboutusComponent"),
   {
     ssr: false,
   }
