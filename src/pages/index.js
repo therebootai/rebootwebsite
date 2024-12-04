@@ -1,4 +1,5 @@
 import AboutusComponent from "@/components/AboutusComponent";
+import AwardAndRecognitions from "@/components/AwardAndRecognitions";
 import OurProduct from "@/components/OurProduct";
 import OurProjects from "@/components/OurProjects";
 import OurResponsibility from "@/components/OurResponsibility";
@@ -19,12 +20,12 @@ const OurServices = dynamic(() => import("@/components/OurServices"), {
   ssr: false,
 });
 
-const AwardAndRecognitions = dynamic(
-  () => import("@/components/AwardAndRecognitions"),
-  {
-    ssr: false,
-  }
-);
+// const AwardAndRecognitions = dynamic(
+//   () => import("@/components/AwardAndRecognitions"),
+//   {
+//     ssr: false,
+//   }
+// );
 
 // const AboutusComponent = dynamic(
 //   () => import("@/components/AboutusComponent"),
