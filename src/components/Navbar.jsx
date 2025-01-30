@@ -254,7 +254,7 @@ const Navbar = () => {
                         key={con}
                       >
                         <h1 className="text-base xlg:text-lg font-semibold flex items-center gap-2">
-                          {menu.heading}{" "}
+                          {menu.heading}
                           <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
                         </h1>
                         <ul className="flex flex-col gap-4">
